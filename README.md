@@ -13,11 +13,40 @@ A lightweight, web-based filament management system designed for ESP32. Effortle
 
     Usage Calculator: Easily subtract the weight used after a print to keep your inventory accurate.
 
+    Smart Progress Bar: The color-coded bar on each filament card automatically shrinks as the remaining weight decreases.
+
+    The bar reflects the percentage of filament left (based on a standard 1kg spool), giving you an instant overview of which spools are running low.
+
     WiFi Captive Portal: Effortless WiFi configuration via a dedicated setup Access Point.
 
     Backup & Restore: Download your entire database as a binary file and restore it whenever needed.
 
+    30-Day Backup Reminder: The tracker automatically monitors the time since your last data export.
+
     Multilingual: Supports both English and German.
+
+##    🏷️ Smart QR-Code Labels & Export
+
+The ESP Filament Tracker doesn't just store data; it bridges the gap between your digital inventory and your physical spools. Each filament entry can generate a custom, print-ready label.
+What’s on the Label?
+
+The generated label is optimized for clarity and includes all essential information for a successful print:
+
+    Manufacturer & Material: Large, bold text for quick identification.
+
+    Dynamic QR-Code: A scanable code that links directly to the specific filament's edit page on your ESP32.
+
+    Temperature Profiles: Printed values for both Nozzle (Hotend) and Print Bed ranges.
+
+    Print-Ready Format: A clean, black-and-white design optimized for standard thermal label printers or regular paper.
+
+How it Improves your Workflow
+
+    Instant Access: Instead of searching through a long list, simply scan the QR code on the physical spool with your smartphone camera.
+
+    Direct Editing: The scan takes you directly to the edit page where you can instantly subtract the weight used after a print.
+
+    No More Guesswork: All technical data (temperatures) is physically attached to the spool, so you don't have to look up the manufacturer's specs ever again.
 
 ## 🛠 Hardware Requirements
 
@@ -59,15 +88,4 @@ The tracker manages two main files within the internal flash memory:
 
 This project is released under the MIT License. You are free to use, modify, and distribute it for private and commercial purposes.
 
-## 🚀 Install
-If you just want to get started without installing any software, use our Web Flasher:
 
-[![Flash with ESPWebTool](https://img.shields.io/badge/Flash-with%20ESPWebTool-52a552?style=for-the-badge&logo=espressif)](https://www.angelweile.de)
-
-*Supports Chrome and Edge browsers via USB.*
-
-🛠 Hardware Requirements
-
- Microcontroller: ESP32 series (S2, S3, C3, C6, or standard ESP32).
-
-Storage: Utilizes SPIFFS for internal data persistence.
