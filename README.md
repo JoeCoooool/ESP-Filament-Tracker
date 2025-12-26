@@ -7,6 +7,6 @@ If you just want to get started without installing any software, use our Web Fla
 
 🛠 Hardware Requirements
 
-    Microcontroller: ESP32 series (S2, S3, C3, C6, or standard ESP32).
+ Microcontroller: ESP32 series (S2, S3, C3, C6, or standard ESP32).
 
-    Storage: Utilizes SPIFFS for internal data persistence.
+Storage: Utilizes SPIFFS for internal data persistence.
