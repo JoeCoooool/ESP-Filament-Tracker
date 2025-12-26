@@ -53,7 +53,7 @@ How it Improves your Workflow
 
 ## 🛠 Hardware Requirements
 
-    Microcontroller: ESP32 series (S2, S3, C3, C6, or standard ESP32).
+    Microcontroller: ESP32 series (S3, C3, C6, or standard ESP32).
 
     Storage: Utilizes SPIFFS (Serial Peripheral Interface Flash File System) for internal data persistence.
 
