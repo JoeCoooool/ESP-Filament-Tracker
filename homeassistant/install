@@ -1,0 +1,11 @@
+Create a Sensor 
+
+sensor:
+  - platform: rest
+    name: Filament Tracker
+    resource: http://<ESP_IP>/api/filament
+    method: GET
+    scan_interval: 60
+    value_template: "{{ value_json.filaments | length }}"
+    json_attributes:
+      - filaments
